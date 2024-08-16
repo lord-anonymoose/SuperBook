@@ -14,6 +14,7 @@
 		8E3C4E992C6FEB360042879A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E982C6FEB360042879A /* Model.swift */; };
 		8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */; };
 		8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */; };
+		8E3C4EA12C6FFE4D0042879A /* SuperHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperHeroCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8E3C4E982C6FEB360042879A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		8E3C4EA02C6FFE4D0042879A /* SuperHeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
 				8E3C4E8A2C6FD7850042879A /* ContentView.swift */,
+				8E3C4EA02C6FFE4D0042879A /* SuperHeroCell.swift */,
 				8E3C4E972C6FEA820042879A /* Services */,
 				8E3C4E962C6FEA720042879A /* Model */,
 				8E3C4E8C2C6FD7860042879A /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
+				8E3C4EA12C6FFE4D0042879A /* SuperHeroCell.swift in Sources */,
 				8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */,
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
 				8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */,
