@@ -64,7 +64,7 @@ struct Connections: Codable {
 
 // MARK: - Images
 struct Images: Codable {
-    let xs: String?
+    let xs: String!
     let sm: String?
     let md: String?
     let lg: String?
