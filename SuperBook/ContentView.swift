@@ -14,6 +14,16 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Spacer()
+            Button("Click me!") {
+                NetworkService.getCharacters { heroes in
+                    DispatchQueue.main.async {
+                        for hero in heroes {
+                            print(hero.id)
+                        }
+                    }
+                }
+            }
         }
         .padding()
     }

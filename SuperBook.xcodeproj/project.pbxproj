@@ -11,6 +11,9 @@
 		8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8A2C6FD7850042879A /* ContentView.swift */; };
 		8E3C4E8D2C6FD7860042879A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8C2C6FD7860042879A /* Assets.xcassets */; };
 		8E3C4E902C6FD7860042879A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8F2C6FD7860042879A /* Preview Assets.xcassets */; };
+		8E3C4E992C6FEB360042879A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E982C6FEB360042879A /* Model.swift */; };
+		8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */; };
+		8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		8E3C4E8A2C6FD7850042879A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E3C4E8C2C6FD7860042879A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3C4E8F2C6FD7860042879A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E3C4E982C6FEB360042879A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,8 @@
 			children = (
 				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
 				8E3C4E8A2C6FD7850042879A /* ContentView.swift */,
+				8E3C4E972C6FEA820042879A /* Services */,
+				8E3C4E962C6FEA720042879A /* Model */,
 				8E3C4E8C2C6FD7860042879A /* Assets.xcassets */,
 				8E3C4E8E2C6FD7860042879A /* Preview Content */,
 			);
@@ -65,6 +73,23 @@
 				8E3C4E8F2C6FD7860042879A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E3C4E962C6FEA720042879A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C4E982C6FEB360042879A /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E3C4E972C6FEA820042879A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */,
+				8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
+				8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */,
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
+				8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */,
 				8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +303,14 @@
 				DEVELOPMENT_TEAM = M4YMDNRFZP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SuperBook;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +335,14 @@
 				DEVELOPMENT_TEAM = M4YMDNRFZP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SuperBook;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
