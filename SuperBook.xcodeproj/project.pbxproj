@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E01E93F2C715394000D0E37 /* SuperheroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E93E2C715394000D0E37 /* SuperheroList.swift */; };
 		8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E882C6FD7850042879A /* SuperBookApp.swift */; };
 		8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8A2C6FD7850042879A /* ContentView.swift */; };
 		8E3C4E8D2C6FD7860042879A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8C2C6FD7860042879A /* Assets.xcassets */; };
@@ -14,10 +15,11 @@
 		8E3C4E992C6FEB360042879A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E982C6FEB360042879A /* Model.swift */; };
 		8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */; };
 		8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */; };
-		8E3C4EA12C6FFE4D0042879A /* SuperHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperHeroCell.swift */; };
+		8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E01E93E2C715394000D0E37 /* SuperheroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroList.swift; sourceTree = "<group>"; };
 		8E3C4E852C6FD7850042879A /* SuperBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3C4E882C6FD7850042879A /* SuperBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperBookApp.swift; sourceTree = "<group>"; };
 		8E3C4E8A2C6FD7850042879A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,7 +28,7 @@
 		8E3C4E982C6FEB360042879A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
-		8E3C4EA02C6FFE4D0042879A /* SuperHeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroCell.swift; sourceTree = "<group>"; };
+		8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 			children = (
 				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
 				8E3C4E8A2C6FD7850042879A /* ContentView.swift */,
-				8E3C4EA02C6FFE4D0042879A /* SuperHeroCell.swift */,
+				8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */,
+				8E01E93E2C715394000D0E37 /* SuperheroList.swift */,
 				8E3C4E972C6FEA820042879A /* Services */,
 				8E3C4E962C6FEA720042879A /* Model */,
 				8E3C4E8C2C6FD7860042879A /* Assets.xcassets */,
@@ -166,9 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
-				8E3C4EA12C6FFE4D0042879A /* SuperHeroCell.swift in Sources */,
+				8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */,
 				8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */,
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
+				8E01E93F2C715394000D0E37 /* SuperheroList.swift in Sources */,
 				8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */,
 				8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */,
 			);

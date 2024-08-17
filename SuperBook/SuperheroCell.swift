@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SuperHeroCell: View {
+struct SuperheroCell: View {
     let imageURL: URL?
     let name: String?
     let id: Int?
@@ -54,13 +54,8 @@ struct SuperHeroCell: View {
                 }
             }
             .frame(height: 70)
-            .padding(.leading, 10)
-            
             Spacer()
         }
-        .padding(5)
-        .background(Color(white: 0.95))
-        .cornerRadius(8)
     }
 }
 

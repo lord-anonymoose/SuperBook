@@ -11,30 +11,7 @@ struct ContentView: View {
     @State private var heroes: [Superhero] = []
     
     var body: some View {
-        VStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 10) {
-                    ForEach(heroes, id: \.id) { hero in
-                        if let urlString = hero.images?.xs {
-                            SuperHeroCell(imageURL: URL(string: urlString), name: hero.name, id: hero.id)
-                            //.padding(.horizontal)
-                        }
-                    }
-                }
-            }
-        }
-        .onAppear(perform: {
-            loadHeroes()
-        })
-        .padding()
-    }
-    
-    private func loadHeroes() {
-        NetworkService.getCharacters { heroes in
-            DispatchQueue.main.async {
-                self.heroes = heroes
-            }
-        }
+        SuperheroList(heroes: self.heroes)
     }
 }
 
