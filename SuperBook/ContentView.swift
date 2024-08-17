@@ -15,8 +15,10 @@ struct ContentView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
                     ForEach(heroes, id: \.id) { hero in
-                        SuperHeroCell(imageURL: URL(string: hero.images.xs)!, name: hero.name, id: "\(hero.id)")
+                        if let urlString = hero.images?.xs {
+                            SuperHeroCell(imageURL: URL(string: urlString), name: hero.name, id: hero.id)
                             //.padding(.horizontal)
+                        }
                     }
                 }
             }

@@ -8,42 +8,50 @@
 import SwiftUI
 
 struct SuperHeroCell: View {
-    let imageURL: URL
-    let name: String
-    let id: String
+    let imageURL: URL?
+    let name: String?
+    let id: Int?
     
     var body: some View {
         HStack(spacing: 20) {
-            AsyncImage(url: imageURL) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView()
-                        .frame(width: 50, height: 50)
-                case .success(let image):
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 70)
-                case .failure:
-                    Image(systemName: "photo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 70)
-                        .clipShape(Circle())
-                @unknown default:
-                    fatalError()
+            if let url = imageURL {
+                AsyncImage(url: url) { phase in
+                    switch phase {
+                    case .empty:
+                        ProgressView()
+                            .frame(width: 50, height: 50)
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 70)
+                    case .failure:
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 70)
+                            .clipShape(Circle())
+                    @unknown default:
+                        fatalError()
+                    }
                 }
+                .padding(.leading, 10)
             }
-            .padding(.leading, 10)
             
             VStack(alignment: .leading) {
-                Text(name)
+                Text(name ?? "Unknown")
                     .font(.title3)
                     .fontWeight(.bold)
                 
-                Text(id)
-                    .font(.footnote)
-                    .fontWeight(.light)
+                if let unwrappedID = id {
+                    Text(String(describing: unwrappedID))
+                        .font(.footnote)
+                        .fontWeight(.light)
+                } else {
+                    Text("Unknown")
+                        .font(.footnote)
+                        .fontWeight(.light)
+                }
             }
             .frame(height: 70)
             .padding(.leading, 10)

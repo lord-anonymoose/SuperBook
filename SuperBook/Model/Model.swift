@@ -8,15 +8,15 @@
 import Foundation
 
 struct Superhero: Codable {
-    let id: Int
-    let name: String
-    let slug: String
+    let id: Int?
+    let name: String?
+    let slug: String?
     let powerstats: Powerstats?
     let appearance: Appearance?
     let biography: Biography?
     let work: Work?
     let connections: Connections?
-    let images: Images
+    let images: Images?
 }
 
 // MARK: - Powerstats
@@ -33,8 +33,8 @@ struct Powerstats: Codable {
 struct Appearance: Codable {
     let gender: String?
     let race: String?
-    let height: [String]
-    let weight: [String]
+    let height: [String]?
+    let weight: [String]?
     let eyeColor: String?
     let hairColor: String?
 }
@@ -43,7 +43,7 @@ struct Appearance: Codable {
 struct Biography: Codable {
     let fullName: String?
     let alterEgos: String?
-    let aliases: [String]
+    let aliases: [String]?
     let placeOfBirth: String?
     let firstAppearance: String?
     let publisher: String?
