@@ -16,6 +16,7 @@
 		8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */; };
 		8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */; };
 		8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */; };
+		8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 		8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCell.swift; sourceTree = "<group>"; };
+		8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,9 @@
 		8E3C4E872C6FD7850042879A /* SuperBook */ = {
 			isa = PBXGroup;
 			children = (
-				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
 				8E3C4E8A2C6FD7850042879A /* ContentView.swift */,
-				8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */,
-				8E01E93E2C715394000D0E37 /* SuperheroList.swift */,
+				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
+				8E74B7E52C7FA72300D9F208 /* Views */,
 				8E3C4E972C6FEA820042879A /* Services */,
 				8E3C4E962C6FEA720042879A /* Model */,
 				8E3C4E8C2C6FD7860042879A /* Assets.xcassets */,
@@ -96,6 +97,32 @@
 				8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		8E74B7E52C7FA72300D9F208 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E74B7E62C7FA73800D9F208 /* SuperheroList */,
+				8E74B7E92C7FA76E00D9F208 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E74B7E62C7FA73800D9F208 /* SuperheroList */ = {
+			isa = PBXGroup;
+			children = (
+				8E01E93E2C715394000D0E37 /* SuperheroList.swift */,
+				8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */,
+			);
+			path = SuperheroList;
+			sourceTree = "<group>";
+		};
+		8E74B7E92C7FA76E00D9F208 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
+				8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */,
 				8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */,
 				8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */,
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
@@ -326,6 +354,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Philipp-Lazarev.SuperBook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +390,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Philipp-Lazarev.SuperBook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
