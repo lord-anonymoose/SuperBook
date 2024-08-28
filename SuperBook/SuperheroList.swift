@@ -11,29 +11,24 @@ struct SuperheroList: View {
     @State var heroes: [Superhero]
     
     var body: some View {
-        List {
-            ForEach(heroes, id: \.id) { hero in
-                if let urlString = hero.images?.xs {
-                    Button(action: {
-                        print("Hero with \(String(describing: hero.id)) ID tapped")
-                    }) {
-                        SuperheroCell(imageURL: URL(string: urlString), name: hero.name, id: hero.id)
-                            .contentShape(Rectangle())
-                    }
-                    .buttonStyle(PlainButtonStyle())
+        NavigationStack {
+            List(heroes, id: \.id) { hero in
+                NavigationLink {
+                    Text("Hello, world!")
+                } label: {
+                    SuperheroCell(imageURL: hero.images?.xs, name: hero.name, id: hero.id)
+                        .contentShape(Rectangle())
                 }
             }
         }
-        .onAppear(perform: {
-            loadHeroes()
-        })
+        .task {
+            await loadHeroes()
+        }
     }
     
-    private func loadHeroes() {
+    private func loadHeroes() async {
         NetworkService.getCharacters { heroes in
-            DispatchQueue.main.async {
-                self.heroes = heroes
-            }
+            self.heroes = heroes
         }
     }
 }

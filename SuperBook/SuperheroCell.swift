@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct SuperheroCell: View {
-    let imageURL: URL?
+    let imageURL: String?
     let name: String?
     let id: Int?
     
     var body: some View {
         HStack(spacing: 20) {
-            if let url = imageURL {
+            if let url = URL(string: imageURL ?? "") {
                 AsyncImage(url: url) { phase in
                     switch phase {
                     case .empty:
