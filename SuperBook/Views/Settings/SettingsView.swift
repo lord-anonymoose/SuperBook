@@ -12,29 +12,34 @@ struct SettingsView: View {
     
     @AppStorage("preferredTheme") private var preferredTheme = 0
 
+    @Binding var showHeaders: Bool
 
     var body: some View {
-        Form {
-            Section(header: Text("Theme")) {
-                Picker("What is your favorite color?", selection: $preferredTheme) {
-                    Text("System").tag(0)
-                    Text("Light").tag(1)
-                    Text("Dark").tag(2)
+        NavigationStack {
+            Form {
+                Section(header: Text("App Interface")) {
+                    Picker("What is your favorite color?", selection: $preferredTheme) {
+                        Text("System").tag(0)
+                        Text("Light").tag(1)
+                        Text("Dark").tag(2)
+                    }
+                    .pickerStyle(.segmented)
+                    .padding(.top, 20)
+                    Toggle("Show headers:", isOn: $showHeaders)
                 }
-                .pickerStyle(.segmented)
-
+                
+                Section(header: Text("Content size: \(sliderValue)")) {
+                    Text("Yo!")
+                    Slider(value: $sliderValue)
+                }
             }
-            Section(header: Text("Headers")) {
-                Text("Yet Another Hello!")
-            }
-            Section(header: Text("Content size: \(sliderValue)")) {
-                Text("Yo!")
-                Slider(value: $sliderValue)
-            }
+            .navigationTitle(showHeaders ? "Settings" : "")
         }
     }
 }
 
+/*
 #Preview {
-    SettingsView()
+    SettingsView(showHeaders: <#Binding<Bool>#>)
 }
+*/

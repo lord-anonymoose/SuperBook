@@ -14,15 +14,17 @@ struct ContentView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("preferredTheme") private var preferredTheme = 0
 
+    @State var showHeaders: Bool = true
+    
     var body: some View {
         TabView(selection: $tabSelected) {
-            SuperheroList(heroes: heroes)
+            SuperheroList(heroes: heroes, showHeaders: $showHeaders)
                 .tabItem {
                     Label("Superheroes", systemImage: "list.star")
                 }
                 .tag(1)
             
-            SettingsView()
+            SettingsView(showHeaders: $showHeaders)
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
@@ -32,7 +34,8 @@ struct ContentView: View {
     }
 }
 
-
+/*
 #Preview {
-    ContentView()
+    ContentView(showHeaders: <#Bool#>)
 }
+*/

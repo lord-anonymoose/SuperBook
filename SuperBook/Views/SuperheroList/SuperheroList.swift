@@ -10,7 +10,8 @@ import SwiftUI
 struct SuperheroList: View {
     @State var heroes: [Superhero]
     @Environment(\.colorScheme) var colorScheme
-
+    @Binding var showHeaders: Bool
+    
     var body: some View {
         NavigationStack {
             List(heroes, id: \.id) { hero in
@@ -21,6 +22,7 @@ struct SuperheroList: View {
                         .contentShape(Rectangle())
                 }
             }
+            .navigationTitle(showHeaders ? "Superheroes" : "")
         }
         .task {
             await loadHeroes()
