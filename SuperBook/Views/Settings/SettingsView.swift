@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var sliderValue: Double = 0
+    
+    @AppStorage("preferredTheme") private var preferredTheme = 0
+
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section(header: Text("Theme")) {
+                Picker("What is your favorite color?", selection: $preferredTheme) {
+                    Text("System").tag(0)
+                    Text("Light").tag(1)
+                    Text("Dark").tag(2)
+                }
+                .pickerStyle(.segmented)
+
+            }
+            Section(header: Text("Headers")) {
+                Text("Yet Another Hello!")
+            }
+            Section(header: Text("Content size: \(sliderValue)")) {
+                Text("Yo!")
+                Slider(value: $sliderValue)
+            }
+        }
     }
 }
 

@@ -17,6 +17,8 @@
 		8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */; };
 		8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */; };
 		8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */; };
+		8E74B7EB2C7FB1B800D9F208 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7EA2C7FB1B800D9F208 /* ColorTheme.swift */; };
+		8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 		8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCell.swift; sourceTree = "<group>"; };
 		8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8E74B7EA2C7FB1B800D9F208 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8E3C4E982C6FEB360042879A /* Model.swift */,
+				8E74B7EA2C7FB1B800D9F208 /* ColorTheme.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */,
+				8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */,
 				8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */,
 			);
 			path = Services;
@@ -195,8 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E74B7EB2C7FB1B800D9F208 /* ColorTheme.swift in Sources */,
 				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
 				8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */,
+				8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */,
 				8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */,
 				8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */,
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
@@ -346,7 +354,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +390,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
