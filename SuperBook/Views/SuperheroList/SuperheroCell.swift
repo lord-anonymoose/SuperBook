@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SuperheroCell: View {
+    @AppStorage("cellHeight") private var cellHeight = 100.0
+
     let imageURL: String?
     let name: String?
     let id: Int?
@@ -24,12 +26,12 @@ struct SuperheroCell: View {
                         image
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 70)
+                            .frame(height: CGFloat(cellHeight))
                     case .failure:
                         Image(systemName: "photo")
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 70)
+                            .frame(height: CGFloat(cellHeight))
                             .clipShape(Circle())
                     @unknown default:
                         fatalError()
@@ -53,14 +55,12 @@ struct SuperheroCell: View {
                         .fontWeight(.light)
                 }
             }
-            .frame(height: 70)
+            .frame(height: (CGFloat(cellHeight)))
             Spacer()
         }
     }
 }
 
-/*
 #Preview {
-    SuperHeroCell(image: Image(systemName: "person.circle").resizable(), name: "Name", id: "1")
+    SuperheroCell(imageURL: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/xs/1-a-bomb.jpg", name: "A-Bomb", id: 1)
 }
-*/

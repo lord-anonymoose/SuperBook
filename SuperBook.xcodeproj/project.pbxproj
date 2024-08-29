@@ -18,6 +18,7 @@
 		8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */; };
 		8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */; };
 		8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */; };
+		8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCell.swift; sourceTree = "<group>"; };
 		8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeService.swift; sourceTree = "<group>"; };
+		8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				8E01E93E2C715394000D0E37 /* SuperheroList.swift */,
+				8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */,
 				8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */,
 			);
 			path = SuperheroList;
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */,
 				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
 				8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */,
 				8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */,

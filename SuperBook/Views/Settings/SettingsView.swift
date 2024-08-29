@@ -9,9 +9,12 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var sliderValue: Double = 0
+    @State private var showEditor = false
     
     @AppStorage("preferredTheme") private var preferredTheme = 0
     @AppStorage("showHeaders") private var showHeaders: Bool = false
+    @AppStorage("cellHeight") private var cellHeight = 100.0
+
 
     var body: some View {
         NavigationStack {
@@ -23,13 +26,26 @@ struct SettingsView: View {
                         Text("Dark").tag(2)
                     }
                     .pickerStyle(.segmented)
-                    .padding(.top, 20)
                     Toggle("Show headers:", isOn: $showHeaders)
-                }
-                
-                Section(header: Text("Content size: \(sliderValue)")) {
-                    Text("Yo!")
-                    Slider(value: $sliderValue)
+                    HStack {
+                        Text("Content size: \(cellHeight)")
+                            .onTapGesture {
+                                showEditor.toggle()
+                            }
+                        Spacer()
+                        if showEditor {
+                            Image(systemName: "arrowtriangle.down.fill")
+                        } else {
+                            Image(systemName: "arrowtriangle.right.fill")
+                        }
+                    }
+                    .onTapGesture {
+                        showEditor.toggle()
+                    }
+                    if showEditor {
+                        Slider(value: $cellHeight, in: 70.0 ... 120.0, step: 1.0)
+                        SuperheroCell(imageURL: "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/1-a-bomb.jpg", name: "A-Bomb", id: 1)
+                    }
                 }
             }
             .navigationTitle(showHeaders ? "Settings" : "")

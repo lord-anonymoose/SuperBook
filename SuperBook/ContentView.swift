@@ -14,7 +14,7 @@ struct ContentView: View {
     @AppStorage("tab") private var tabSelected = 1
     @AppStorage("preferredTheme") private var preferredTheme = 0
     @AppStorage("showHeaders") private var showHeaders: Bool = false
-    
+    @AppStorage("cellHeight") private var cellHeight = 150.0
     
     var body: some View {
         TabView(selection: $tabSelected) {

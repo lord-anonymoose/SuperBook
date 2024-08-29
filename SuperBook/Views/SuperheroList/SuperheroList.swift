@@ -16,9 +16,9 @@ struct SuperheroList: View {
         NavigationStack {
             List(heroes, id: \.id) { hero in
                 NavigationLink {
-                    Text("Hello, world!")
+                    SuperheroInfoView(superhero: hero)
                 } label: {
-                    SuperheroCell(imageURL: hero.images?.xs, name: hero.name, id: hero.id)
+                    SuperheroCell(imageURL: hero.images?.sm, name: hero.name, id: hero.id)
                         .contentShape(Rectangle())
                 }
             }
