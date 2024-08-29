@@ -9,22 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @AppStorage("tab") private var tabSelected = 1
     @State private var heroes: [Superhero] = []
-    @AppStorage("isDarkMode") private var isDarkMode = false
+    
+    @AppStorage("tab") private var tabSelected = 1
     @AppStorage("preferredTheme") private var preferredTheme = 0
-
-    @State var showHeaders: Bool = true
+    @AppStorage("showHeaders") private var showHeaders: Bool = false
+    
     
     var body: some View {
         TabView(selection: $tabSelected) {
-            SuperheroList(heroes: heroes, showHeaders: $showHeaders)
+            SuperheroList(heroes: heroes)
                 .tabItem {
                     Label("Superheroes", systemImage: "list.star")
                 }
                 .tag(1)
             
-            SettingsView(showHeaders: $showHeaders)
+            SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }

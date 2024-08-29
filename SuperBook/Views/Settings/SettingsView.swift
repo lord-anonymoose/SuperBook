@@ -11,8 +11,7 @@ struct SettingsView: View {
     @State private var sliderValue: Double = 0
     
     @AppStorage("preferredTheme") private var preferredTheme = 0
-
-    @Binding var showHeaders: Bool
+    @AppStorage("showHeaders") private var showHeaders: Bool = false
 
     var body: some View {
         NavigationStack {

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SuperheroList: View {
     @State var heroes: [Superhero]
-    @Environment(\.colorScheme) var colorScheme
-    @Binding var showHeaders: Bool
     
+    @AppStorage("showHeaders") private var showHeaders: Bool = false
+
     var body: some View {
         NavigationStack {
             List(heroes, id: \.id) { hero in
@@ -27,7 +27,6 @@ struct SuperheroList: View {
         .task {
             await loadHeroes()
         }
-        .preferredColorScheme(colorScheme)
     }
     
     private func loadHeroes() async {
