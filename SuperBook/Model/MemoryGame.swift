@@ -6,3 +6,28 @@
 //
 
 import Foundation
+
+
+protocol Game {
+    func start()
+    func finish()
+}
+
+
+class MemoryGame: Game {
+    
+    var cards: [Superhero]
+    
+    
+    init(superheroes: [Superhero]) {
+        self.cards = (superheroes.shuffled() + superheroes.shuffled()).shuffled()
+    }
+    
+    func start() {
+        
+    }
+    
+    func finish() {
+        
+    }
+}

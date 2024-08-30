@@ -42,25 +42,13 @@ struct SuperheroInfoView: View {
                         .padding(.leading, 10)
                         
                         Spacer()
-                        Text(superhero.name ?? "Unknown")
+                        Text(superhero.name ?? "Unknown".localized)
                             .font(.title)
                             .fontWeight(.bold)
                         Spacer()
                     }
                 }
             }
-            
-            /*
-             
-             "powerstats": {
-               "intelligence": 50,
-               "strength": 90,
-               "speed": 53,
-               "durability": 64,
-               "power": 99,
-               "combat": 65
-             },
-             */
             
             Section(header: Text("Statistics")) {
                 HStack {

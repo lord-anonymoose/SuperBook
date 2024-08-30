@@ -41,7 +41,7 @@ struct SuperheroCell: View {
             }
             
             VStack(alignment: .leading) {
-                Text(name ?? "Unknown")
+                Text(name ?? "Unknown".localized)
                     .font(.title3)
                     .fontWeight(.bold)
                 
@@ -50,7 +50,7 @@ struct SuperheroCell: View {
                         .font(.footnote)
                         .fontWeight(.light)
                 } else {
-                    Text("Unknown")
+                    Text("Unknown".localized)
                         .font(.footnote)
                         .fontWeight(.light)
                 }

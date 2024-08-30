@@ -22,7 +22,7 @@ struct SuperheroList: View {
                         .contentShape(Rectangle())
                 }
             }
-            .navigationTitle(showHeaders ? "Superheroes" : "")
+            .navigationTitle(showHeaders ? "Superheroes".localized : "")
         }
         .task {
             await loadHeroes()

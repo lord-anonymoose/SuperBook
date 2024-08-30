@@ -16,9 +16,15 @@
 		8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */; };
 		8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */; };
 		8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */; };
+		8E487F022C82681700321721 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E487F012C82681700321721 /* GameView.swift */; };
+		8E487F042C826A0400321721 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E487F032C826A0400321721 /* String.swift */; };
+		8E487F062C826BA400321721 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8E487F052C826BA400321721 /* Localizable.xcstrings */; };
 		8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */; };
 		8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */; };
 		8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */; };
+		8EEFC1862C824B52007AE144 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFC1852C824B52007AE144 /* MemoryGame.swift */; };
+		8EEFC18A2C824DF2007AE144 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */; };
+		8EEFC18D2C825304007AE144 /* RotateDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFC18C2C825304007AE144 /* RotateDeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +38,15 @@
 		8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
 		8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCell.swift; sourceTree = "<group>"; };
+		8E487F012C82681700321721 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		8E487F032C826A0400321721 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8E487F052C826BA400321721 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeService.swift; sourceTree = "<group>"; };
 		8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroInfoView.swift; sourceTree = "<group>"; };
+		8EEFC1852C824B52007AE144 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
+		8EEFC18C2C825304007AE144 /* RotateDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateDeviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 		8E3C4E7C2C6FD7850042879A = {
 			isa = PBXGroup;
 			children = (
+				8E487F052C826BA400321721 /* Localizable.xcstrings */,
 				8E3C4E872C6FD7850042879A /* SuperBook */,
 				8E3C4E862C6FD7850042879A /* Products */,
 			);
@@ -90,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8E3C4E982C6FEB360042879A /* Model.swift */,
+				8EEFC1852C824B52007AE144 /* MemoryGame.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,7 +122,10 @@
 			isa = PBXGroup;
 			children = (
 				8E74B7E62C7FA73800D9F208 /* SuperheroList */,
+				8EEFC1872C824DB9007AE144 /* Games */,
 				8E74B7E92C7FA76E00D9F208 /* Settings */,
+				8EEFC18B2C8252EE007AE144 /* System */,
+				8E487F032C826A0400321721 /* String.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,6 +146,31 @@
 				8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		8EEFC1872C824DB9007AE144 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				8E487F012C82681700321721 /* GameView.swift */,
+				8EEFC1882C824DD1007AE144 /* MemoryGame */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		8EEFC1882C824DD1007AE144 /* MemoryGame */ = {
+			isa = PBXGroup;
+			children = (
+				8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */,
+			);
+			path = MemoryGame;
+			sourceTree = "<group>";
+		};
+		8EEFC18B2C8252EE007AE144 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				8EEFC18C2C825304007AE144 /* RotateDeviceView.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +215,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8E3C4E7C2C6FD7850042879A;
 			productRefGroup = 8E3C4E862C6FD7850042879A /* Products */;
@@ -191,6 +234,7 @@
 			files = (
 				8E3C4E902C6FD7860042879A /* Preview Assets.xcassets in Resources */,
 				8E3C4E8D2C6FD7860042879A /* Assets.xcassets in Resources */,
+				8E487F062C826BA400321721 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,13 +246,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */,
+				8EEFC18A2C824DF2007AE144 /* MemoryGameView.swift in Sources */,
 				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
 				8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */,
+				8EEFC1862C824B52007AE144 /* MemoryGame.swift in Sources */,
 				8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */,
+				8E487F022C82681700321721 /* GameView.swift in Sources */,
 				8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */,
+				8EEFC18D2C825304007AE144 /* RotateDeviceView.swift in Sources */,
 				8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */,
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
 				8E01E93F2C715394000D0E37 /* SuperheroList.swift in Sources */,
+				8E487F042C826A0400321721 /* String.swift in Sources */,
 				8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */,
 				8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */,
 			);
@@ -352,8 +401,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,8 +437,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

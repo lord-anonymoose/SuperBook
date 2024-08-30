@@ -18,13 +18,13 @@ extension NetworkError {
     public var description: String {
         switch self {
         case .urlError:
-            return String(localized: "The URL is not valid!", comment: "Error message")
+            return "The URL is not valid!".localized
         case .jsonError:
-            return String(localized: "Couldn't parse JSON data!", comment: "Error message")
+            return "Couldn't parse JSON data!".localized
         case .networkError:
-            return String(localized: "Your connection is lost!", comment: "Error message")
+            return "Your connection is lost!".localized
         case .httpResponseError:
-            return String(localized: "HTTP Response Error!", comment: "Error message")
+            return "HTTP Response Error!".localized
         }
     }
 }

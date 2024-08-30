@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct GameView: View {
+    @State private var orientation = UIDevice.current.orientation
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            if orientation == .portrait && UIDevice.current.userInterfaceIdiom == .phone {
+                RotateDeviceView()
+            } else if orientation == .portraitUpsideDown {
+                
+            } else if orientation == .landscapeLeft || orientation == .landscapeRight || UIDevice.current.userInterfaceIdiom == .pad {
+                MemoryGameView()
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+                // Update orientation when it changes
+            orientation = UIDevice.current.orientation
+        }
     }
 }
 

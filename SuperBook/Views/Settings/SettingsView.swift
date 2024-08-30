@@ -20,7 +20,7 @@ struct SettingsView: View {
         NavigationStack {
             Form {
                 Section(header: Text("App Interface")) {
-                    Picker("What is your favorite color?", selection: $preferredTheme) {
+                    Picker(String("Choose theme"), selection: $preferredTheme) {
                         Text("System").tag(0)
                         Text("Light").tag(1)
                         Text("Dark").tag(2)
@@ -28,7 +28,7 @@ struct SettingsView: View {
                     .pickerStyle(.segmented)
                     Toggle("Show headers:", isOn: $showHeaders)
                     HStack {
-                        Text("Content size: \(cellHeight)")
+                        Text("Content size: \(Int(cellHeight))")
                             .onTapGesture {
                                 showEditor.toggle()
                             }
@@ -48,7 +48,7 @@ struct SettingsView: View {
                     }
                 }
             }
-            .navigationTitle(showHeaders ? "Settings" : "")
+            .navigationTitle(showHeaders ? "Settings".localized : "")
         }
     }
 }
