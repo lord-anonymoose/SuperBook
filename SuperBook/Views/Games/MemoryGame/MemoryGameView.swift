@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import Inferno
 
 struct MemoryGameView: View {
+    @State private var startTime = Date.now
+    @State private var showCongrats = false
+    
     @State private var orientation = UIDevice.current.orientation
     @StateObject private var memoryGame = MemoryGame()
     @State private var prevCard: Int? = nil
@@ -26,7 +30,7 @@ struct MemoryGameView: View {
             memoryGame.cards[index].turn()
         }
     }
-
+    
     private var imageSize = {
         if UIDevice.current.userInterfaceIdiom == .pad {
             return 200.0
@@ -49,15 +53,14 @@ struct MemoryGameView: View {
                                     return
                                 }
                                 
-                                let numberOfTrue = self.memoryGame.cardsAreOpen.filter{$0}.count
                                 flipCard(at: i)
                                 
                                 if prevCard == nil {
                                     prevCard = i
                                 } else if prevCard != nil {
                                     if memoryGame.cards[i].name == memoryGame.cards[prevCard!].name {
-                                        print("It's a pair!")
                                         prevCard = nil
+                                        self.showCongrats = true
                                     } else {
                                         isInteractionDisabled = true
                                         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -68,9 +71,12 @@ struct MemoryGameView: View {
                                         }
                                     }
                                 }
-
                             }
                     }
+                }
+                if showCongrats {
+                    Rectangle()
+                    //Add congratulations message
                 }
             }
         }

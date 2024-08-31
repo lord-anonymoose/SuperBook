@@ -12,6 +12,7 @@ struct MemoryCardView: View {
     let image: Image
     let name: String
     
+
     private var imageSize = {
         if UIDevice.current.userInterfaceIdiom == .pad {
             return 200.0
