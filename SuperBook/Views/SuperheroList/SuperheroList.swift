@@ -33,6 +33,9 @@ struct SuperheroList: View {
         NetworkService.getCharacters { heroes in
             self.heroes = heroes
         }
+        
+        let game = MemoryGame()
+        game.loadImages()
     }
 }
 

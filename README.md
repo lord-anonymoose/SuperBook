@@ -7,5 +7,9 @@ Superbook is a native iOS app based on [free API](https://akabab.github.io/super
 
 There is also a memory game for remembering images of these characters.
 
-Built with Swift and SwiftUI
-by Philip Lazarev, 2024
+## License
+MIT
+
+
+**Built with Swift and SwiftUI**
+**by Philip Lazarev, 2024**

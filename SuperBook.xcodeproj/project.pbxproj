@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E01E93F2C715394000D0E37 /* SuperheroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E93E2C715394000D0E37 /* SuperheroList.swift */; };
+		8E0AF79E2C834E880086F6F7 /* MemoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AF79D2C834E880086F6F7 /* MemoryCardView.swift */; };
 		8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E882C6FD7850042879A /* SuperBookApp.swift */; };
 		8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8A2C6FD7850042879A /* ContentView.swift */; };
 		8E3C4E8D2C6FD7860042879A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8C2C6FD7860042879A /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		8E01E93E2C715394000D0E37 /* SuperheroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroList.swift; sourceTree = "<group>"; };
+		8E0AF79D2C834E880086F6F7 /* MemoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardView.swift; sourceTree = "<group>"; };
 		8E3C4E852C6FD7850042879A /* SuperBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3C4E882C6FD7850042879A /* SuperBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperBookApp.swift; sourceTree = "<group>"; };
 		8E3C4E8A2C6FD7850042879A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */,
+				8E0AF79D2C834E880086F6F7 /* MemoryCardView.swift */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
 				8E01E93F2C715394000D0E37 /* SuperheroList.swift in Sources */,
 				8E487F042C826A0400321721 /* String.swift in Sources */,
+				8E0AF79E2C834E880086F6F7 /* MemoryCardView.swift in Sources */,
 				8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */,
 				8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */,
 			);

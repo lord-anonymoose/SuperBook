@@ -97,6 +97,12 @@
         }
       }
     },
+    "Goodbye, world!" : {
+
+    },
+    "Hello, World!" : {
+
+    },
     "Intelligence: %lld" : {
       "localizations" : {
         "en" : {
@@ -128,6 +134,9 @@
           }
         }
       }
+    },
+    "Loading cards..." : {
+
     },
     "Power: %lld" : {
       "localizations" : {
