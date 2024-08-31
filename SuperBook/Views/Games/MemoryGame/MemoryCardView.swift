@@ -19,17 +19,10 @@ struct MemoryCardView: View {
             return 100.0
         }
     }()
-    
-    /*
-    init(image: Image, name: String) {
-        self.isOpen = false
-        self.image = image
-        self.name = name
-    }
-     */
+
     
     init(isOpen: Binding<Bool>, image: Image, name: String) {
-        self._isOpen = isOpen // Bind the passed binding to the internal state
+        self._isOpen = isOpen
         self.image = image
         self.name = name
     }

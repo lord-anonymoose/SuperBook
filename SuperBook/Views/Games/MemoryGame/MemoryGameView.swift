@@ -10,7 +10,8 @@ import SwiftUI
 struct MemoryGameView: View {
     @State private var orientation = UIDevice.current.orientation
     @StateObject private var memoryGame = MemoryGame()
-    
+    @State private var prevCard: Int? = nil
+    @State private var isInteractionDisabled = false
     let columns = [
         GridItem(.fixed(100)),
         GridItem(.fixed(100)),
@@ -42,29 +43,39 @@ struct MemoryGameView: View {
             } else {
                 LazyVGrid(columns: columns) {
                     ForEach(0..<18) { i in
-                        //self.memoryGame.cards[i]
                         MemoryCardView(isOpen: $memoryGame.cardsAreOpen[i], image: memoryGame.cards[i].image, name: memoryGame.cards[i].name)
                             .onTapGesture {
-                                let numberOfTrue = self.memoryGame.cardsAreOpen.filter{$0}.count
-                                if numberOfTrue < 2 {
-                                    flipCard(at: i)
-                                } else {
-                                    
+                                if isInteractionDisabled {
+                                    return
                                 }
+                                
+                                let numberOfTrue = self.memoryGame.cardsAreOpen.filter{$0}.count
+                                flipCard(at: i)
+                                
+                                if prevCard == nil {
+                                    prevCard = i
+                                } else if prevCard != nil {
+                                    if memoryGame.cards[i].name == memoryGame.cards[prevCard!].name {
+                                        print("It's a pair!")
+                                        prevCard = nil
+                                    } else {
+                                        isInteractionDisabled = true
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                            flipCard(at: i)
+                                            flipCard(at: prevCard!)
+                                            prevCard = nil
+                                            isInteractionDisabled = false
+                                        }
+                                    }
+                                }
+
                             }
-                        /*
-                        self.memoryGame.cards[i].image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: imageSize)
-                         */
                     }
                 }
             }
         }
         .onAppear{
             print("View appeared")
-            //self.memoryGame.loadImages()
         }
     }
 }
