@@ -97,12 +97,6 @@
         }
       }
     },
-    "Goodbye, world!" : {
-
-    },
-    "Hello, World!" : {
-
-    },
     "Intelligence: %lld" : {
       "localizations" : {
         "en" : {

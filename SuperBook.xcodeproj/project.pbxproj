@@ -105,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				8E3C4E982C6FEB360042879A /* Model.swift */,
-				8EEFC1852C824B52007AE144 /* MemoryGame.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +163,7 @@
 			children = (
 				8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */,
 				8E0AF79D2C834E880086F6F7 /* MemoryCardView.swift */,
+				8EEFC1852C824B52007AE144 /* MemoryGame.swift */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";

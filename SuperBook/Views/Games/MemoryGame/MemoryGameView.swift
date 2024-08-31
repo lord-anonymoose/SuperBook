@@ -20,6 +20,11 @@ struct MemoryGameView: View {
         GridItem(.fixed(100)),
     ]
     
+    func flipCard(at index: Int) {
+        if index < memoryGame.cards.count {
+            memoryGame.cards[index].turn()
+        }
+    }
 
     private var imageSize = {
         if UIDevice.current.userInterfaceIdiom == .pad {
@@ -37,16 +42,29 @@ struct MemoryGameView: View {
             } else {
                 LazyVGrid(columns: columns) {
                     ForEach(0..<18) { i in
+                        //self.memoryGame.cards[i]
+                        MemoryCardView(isOpen: $memoryGame.cardsAreOpen[i], image: memoryGame.cards[i].image, name: memoryGame.cards[i].name)
+                            .onTapGesture {
+                                let numberOfTrue = self.memoryGame.cardsAreOpen.filter{$0}.count
+                                if numberOfTrue < 2 {
+                                    flipCard(at: i)
+                                } else {
+                                    
+                                }
+                            }
+                        /*
                         self.memoryGame.cards[i].image
                             .resizable()
                             .scaledToFit()
                             .frame(height: imageSize)
+                         */
                     }
                 }
             }
         }
         .onAppear{
-            self.memoryGame.loadImages()
+            print("View appeared")
+            //self.memoryGame.loadImages()
         }
     }
 }
