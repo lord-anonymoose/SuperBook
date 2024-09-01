@@ -49,21 +49,31 @@ struct MemoryGameView: View {
                     ForEach(0..<18) { i in
                         MemoryCardView(isOpen: $memoryGame.cardsAreOpen[i], image: memoryGame.cards[i].image, name: memoryGame.cards[i].name)
                             .onTapGesture {
+                                // Pause after choosing wrong cards
                                 if isInteractionDisabled {
+                                    return
+                                }
+                                // Preventing tapping the same card two times
+                                if i == prevCard {
                                     return
                                 }
                                 
                                 flipCard(at: i)
                                 
                                 if prevCard == nil {
+                                    // Flipping the first card
                                     prevCard = i
                                 } else if prevCard != nil {
+                                    // Flipping the second card
                                     if memoryGame.cards[i].name == memoryGame.cards[prevCard!].name {
                                         prevCard = nil
-                                        self.showCongrats = true
+                                        if memoryGame.cardsAreOpen.allSatisfy({$0}) {
+                                            self.showCongrats = true
+                                        }
                                     } else {
                                         isInteractionDisabled = true
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                        // Timeout for choosing wrong cards
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                             flipCard(at: i)
                                             flipCard(at: prevCard!)
                                             prevCard = nil
@@ -74,14 +84,16 @@ struct MemoryGameView: View {
                             }
                     }
                 }
-                if showCongrats {
-                    Rectangle()
-                    //Add congratulations message
-                }
             }
         }
         .onAppear{
             print("View appeared")
+        }
+        .alert("Congratulations! You did it!", isPresented: self.$showCongrats) {
+            Button("Restart") {
+                showCongrats = false
+                memoryGame.start()
+            }
         }
     }
 }

@@ -34,9 +34,15 @@ class MemoryGame: Game, ObservableObject {
         loadImages()
     }
     
-    func start() { }
+    func start() { 
+        self.cards = []
+        self.cardsAreOpen = []
+        self.cardInfos = []
+        loadImages()
+    }
     
-    func finish() { }
+    func finish() { 
+    }
     
     func loadImages() {
         print("Started loading images")

@@ -33,6 +33,9 @@
         }
       }
     },
+    "Congratulations! You did it!" : {
+
+    },
     "Content size: %lld" : {
       "localizations" : {
         "en" : {
@@ -147,6 +150,9 @@
           }
         }
       }
+    },
+    "Restart" : {
+
     },
     "Rotate your device!" : {
       "localizations" : {
