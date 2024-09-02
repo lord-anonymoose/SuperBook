@@ -21,7 +21,6 @@
 		8E487F042C826A0400321721 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E487F032C826A0400321721 /* String.swift */; };
 		8E487F062C826BA400321721 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8E487F052C826BA400321721 /* Localizable.xcstrings */; };
 		8E6DDF902C83BDCA006C54E7 /* Inferno in Frameworks */ = {isa = PBXBuildFile; productRef = 8E6DDF8F2C83BDCA006C54E7 /* Inferno */; };
-		8E6DDF932C83C1C0006C54E7 /* Shimmer.metal in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DDF922C83C1C0006C54E7 /* Shimmer.metal */; };
 		8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */; };
 		8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */; };
 		8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */; };
@@ -45,7 +44,6 @@
 		8E487F012C82681700321721 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		8E487F032C826A0400321721 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		8E487F052C826BA400321721 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		8E6DDF922C83C1C0006C54E7 /* Shimmer.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = Shimmer.metal; path = "../../../../Downloads/Inferno-main/Sources/Inferno/Shaders/Transformation/Shimmer.metal"; sourceTree = "<group>"; };
 		8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeService.swift; sourceTree = "<group>"; };
 		8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroInfoView.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 		8E3C4E872C6FD7850042879A /* SuperBook */ = {
 			isa = PBXGroup;
 			children = (
-				8E6DDF912C83C1A9006C54E7 /* Shaders */,
 				8E3C4E8A2C6FD7850042879A /* ContentView.swift */,
 				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
 				8E74B7E52C7FA72300D9F208 /* Views */,
@@ -122,14 +119,6 @@
 				8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		8E6DDF912C83C1A9006C54E7 /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				8E6DDF922C83C1C0006C54E7 /* Shimmer.metal */,
-			);
-			path = Shaders;
 			sourceTree = "<group>";
 		};
 		8E74B7E52C7FA72300D9F208 /* Views */ = {
@@ -273,7 +262,6 @@
 				8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */,
 				8EEFC1862C824B52007AE144 /* MemoryGame.swift in Sources */,
 				8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */,
-				8E6DDF932C83C1C0006C54E7 /* Shimmer.metal in Sources */,
 				8E487F022C82681700321721 /* GameView.swift in Sources */,
 				8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */,
 				8EEFC18D2C825304007AE144 /* RotateDeviceView.swift in Sources */,
