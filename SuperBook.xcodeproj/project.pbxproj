@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E01E93F2C715394000D0E37 /* SuperheroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E93E2C715394000D0E37 /* SuperheroList.swift */; };
+		8E0AF79E2C834E880086F6F7 /* MemoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0AF79D2C834E880086F6F7 /* MemoryCardView.swift */; };
 		8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E882C6FD7850042879A /* SuperBookApp.swift */; };
 		8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8A2C6FD7850042879A /* ContentView.swift */; };
 		8E3C4E8D2C6FD7860042879A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8C2C6FD7860042879A /* Assets.xcassets */; };
 		8E3C4E902C6FD7860042879A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C4E8F2C6FD7860042879A /* Preview Assets.xcassets */; };
+		8E3C4E992C6FEB360042879A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E982C6FEB360042879A /* Model.swift */; };
+		8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */; };
+		8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */; };
+		8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */; };
+		8E487F022C82681700321721 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E487F012C82681700321721 /* GameView.swift */; };
+		8E487F042C826A0400321721 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E487F032C826A0400321721 /* String.swift */; };
+		8E487F062C826BA400321721 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8E487F052C826BA400321721 /* Localizable.xcstrings */; };
+		8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */; };
+		8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */; };
+		8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */; };
+		8EEFC1862C824B52007AE144 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFC1852C824B52007AE144 /* MemoryGame.swift */; };
+		8EEFC18A2C824DF2007AE144 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */; };
+		8EEFC18D2C825304007AE144 /* RotateDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEFC18C2C825304007AE144 /* RotateDeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E01E93E2C715394000D0E37 /* SuperheroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroList.swift; sourceTree = "<group>"; };
+		8E0AF79D2C834E880086F6F7 /* MemoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCardView.swift; sourceTree = "<group>"; };
 		8E3C4E852C6FD7850042879A /* SuperBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3C4E882C6FD7850042879A /* SuperBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperBookApp.swift; sourceTree = "<group>"; };
 		8E3C4E8A2C6FD7850042879A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E3C4E8C2C6FD7860042879A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E3C4E8F2C6FD7860042879A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E3C4E982C6FEB360042879A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroCell.swift; sourceTree = "<group>"; };
+		8E487F012C82681700321721 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		8E487F032C826A0400321721 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8E487F052C826BA400321721 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeService.swift; sourceTree = "<group>"; };
+		8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroInfoView.swift; sourceTree = "<group>"; };
+		8EEFC1852C824B52007AE144 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
+		8EEFC18C2C825304007AE144 /* RotateDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateDeviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +65,7 @@
 		8E3C4E7C2C6FD7850042879A = {
 			isa = PBXGroup;
 			children = (
+				8E487F052C826BA400321721 /* Localizable.xcstrings */,
 				8E3C4E872C6FD7850042879A /* SuperBook */,
 				8E3C4E862C6FD7850042879A /* Products */,
 			);
@@ -51,8 +82,11 @@
 		8E3C4E872C6FD7850042879A /* SuperBook */ = {
 			isa = PBXGroup;
 			children = (
-				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
 				8E3C4E8A2C6FD7850042879A /* ContentView.swift */,
+				8E3C4E882C6FD7850042879A /* SuperBookApp.swift */,
+				8E74B7E52C7FA72300D9F208 /* Views */,
+				8E3C4E972C6FEA820042879A /* Services */,
+				8E3C4E962C6FEA720042879A /* Model */,
 				8E3C4E8C2C6FD7860042879A /* Assets.xcassets */,
 				8E3C4E8E2C6FD7860042879A /* Preview Content */,
 			);
@@ -65,6 +99,81 @@
 				8E3C4E8F2C6FD7860042879A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E3C4E962C6FEA720042879A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C4E982C6FEB360042879A /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E3C4E972C6FEA820042879A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C4E9A2C6FEBC40042879A /* NetworkService.swift */,
+				8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */,
+				8E3C4E9C2C6FEBFD0042879A /* ErrorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8E74B7E52C7FA72300D9F208 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E74B7E62C7FA73800D9F208 /* SuperheroList */,
+				8EEFC1872C824DB9007AE144 /* Games */,
+				8E74B7E92C7FA76E00D9F208 /* Settings */,
+				8EEFC18B2C8252EE007AE144 /* System */,
+				8E487F032C826A0400321721 /* String.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E74B7E62C7FA73800D9F208 /* SuperheroList */ = {
+			isa = PBXGroup;
+			children = (
+				8E01E93E2C715394000D0E37 /* SuperheroList.swift */,
+				8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */,
+				8E3C4EA02C6FFE4D0042879A /* SuperheroCell.swift */,
+			);
+			path = SuperheroList;
+			sourceTree = "<group>";
+		};
+		8E74B7E92C7FA76E00D9F208 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8EEFC1872C824DB9007AE144 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				8E487F012C82681700321721 /* GameView.swift */,
+				8EEFC1882C824DD1007AE144 /* MemoryGame */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		8EEFC1882C824DD1007AE144 /* MemoryGame */ = {
+			isa = PBXGroup;
+			children = (
+				8EEFC1892C824DF2007AE144 /* MemoryGameView.swift */,
+				8E0AF79D2C834E880086F6F7 /* MemoryCardView.swift */,
+				8EEFC1852C824B52007AE144 /* MemoryGame.swift */,
+			);
+			path = MemoryGame;
+			sourceTree = "<group>";
+		};
+		8EEFC18B2C8252EE007AE144 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				8EEFC18C2C825304007AE144 /* RotateDeviceView.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +192,8 @@
 			dependencies = (
 			);
 			name = SuperBook;
+			packageProductDependencies = (
+			);
 			productName = SuperBook;
 			productReference = 8E3C4E852C6FD7850042879A /* SuperBook.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +220,11 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8E3C4E7C2C6FD7850042879A;
+			packageReferences = (
+			);
 			productRefGroup = 8E3C4E862C6FD7850042879A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +241,7 @@
 			files = (
 				8E3C4E902C6FD7860042879A /* Preview Assets.xcassets in Resources */,
 				8E3C4E8D2C6FD7860042879A /* Assets.xcassets in Resources */,
+				8E487F062C826BA400321721 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +252,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */,
+				8EEFC18A2C824DF2007AE144 /* MemoryGameView.swift in Sources */,
+				8E3C4E992C6FEB360042879A /* Model.swift in Sources */,
+				8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */,
+				8EEFC1862C824B52007AE144 /* MemoryGame.swift in Sources */,
+				8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */,
+				8E487F022C82681700321721 /* GameView.swift in Sources */,
+				8E3C4EA12C6FFE4D0042879A /* SuperheroCell.swift in Sources */,
+				8EEFC18D2C825304007AE144 /* RotateDeviceView.swift in Sources */,
+				8E3C4E9D2C6FEBFD0042879A /* ErrorService.swift in Sources */,
 				8E3C4E8B2C6FD7850042879A /* ContentView.swift in Sources */,
+				8E01E93F2C715394000D0E37 /* SuperheroList.swift in Sources */,
+				8E487F042C826A0400321721 /* String.swift in Sources */,
+				8E0AF79E2C834E880086F6F7 /* MemoryCardView.swift in Sources */,
+				8E3C4E9B2C6FEBC40042879A /* NetworkService.swift in Sources */,
 				8E3C4E892C6FD7850042879A /* SuperBookApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +404,14 @@
 				DEVELOPMENT_TEAM = M4YMDNRFZP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SuperBook;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +419,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Philipp-Lazarev.SuperBook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,11 +440,14 @@
 				DEVELOPMENT_TEAM = M4YMDNRFZP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SuperBook;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +455,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Philipp-Lazarev.SuperBook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
