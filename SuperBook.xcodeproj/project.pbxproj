@@ -20,7 +20,6 @@
 		8E487F022C82681700321721 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E487F012C82681700321721 /* GameView.swift */; };
 		8E487F042C826A0400321721 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E487F032C826A0400321721 /* String.swift */; };
 		8E487F062C826BA400321721 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8E487F052C826BA400321721 /* Localizable.xcstrings */; };
-		8E6DDF902C83BDCA006C54E7 /* Inferno in Frameworks */ = {isa = PBXBuildFile; productRef = 8E6DDF8F2C83BDCA006C54E7 /* Inferno */; };
 		8E74B7E82C7FA75D00D9F208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E74B7E72C7FA75D00D9F208 /* SettingsView.swift */; };
 		8E8959D62C8096BB00C13D2E /* ColorThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D52C8096BB00C13D2E /* ColorThemeService.swift */; };
 		8E8959DA2C80FF3A00C13D2E /* SuperheroInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8959D92C80FF3A00C13D2E /* SuperheroInfoView.swift */; };
@@ -57,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E6DDF902C83BDCA006C54E7 /* Inferno in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +193,6 @@
 			);
 			name = SuperBook;
 			packageProductDependencies = (
-				8E6DDF8F2C83BDCA006C54E7 /* Inferno */,
 			);
 			productName = SuperBook;
 			productReference = 8E3C4E852C6FD7850042879A /* SuperBook.app */;
@@ -227,7 +224,6 @@
 			);
 			mainGroup = 8E3C4E7C2C6FD7850042879A;
 			packageReferences = (
-				8E6DDF8E2C83BDCA006C54E7 /* XCRemoteSwiftPackageReference "Inferno" */,
 			);
 			productRefGroup = 8E3C4E862C6FD7850042879A /* Products */;
 			projectDirPath = "";
@@ -491,25 +487,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8E6DDF8E2C83BDCA006C54E7 /* XCRemoteSwiftPackageReference "Inferno" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/Inferno.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8E6DDF8F2C83BDCA006C54E7 /* Inferno */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8E6DDF8E2C83BDCA006C54E7 /* XCRemoteSwiftPackageReference "Inferno" */;
-			productName = Inferno;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E3C4E7D2C6FD7850042879A /* Project object */;
 }

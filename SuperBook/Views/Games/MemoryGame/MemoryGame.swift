@@ -43,9 +43,10 @@ class MemoryGame: Game, ObservableObject {
     
     func finish() { 
     }
+
     
     func loadImages() {
-        print("Started loading images")
+
         NetworkService.getCharacters { heroes in
             var superheroes = heroes.shuffled()
             superheroes.removeAll(where: { $0.images?.md == nil })

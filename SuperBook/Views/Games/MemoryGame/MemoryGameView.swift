@@ -9,26 +9,74 @@ import SwiftUI
 import Inferno
 
 struct MemoryGameView: View {
-    @State private var startTime = Date.now
+
+    // Show congrats message once game is over
     @State private var showCongrats = false
     
+    // Check for device orientation
     @State private var orientation = UIDevice.current.orientation
+    
     @StateObject private var memoryGame = MemoryGame()
+    
+    // Variable for storing an open card from previous move
     @State private var prevCard: Int? = nil
+    
+    // Timeout after a wrong move
     @State private var isInteractionDisabled = false
-    let columns = [
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)),
-    ]
+
+    @State private var rotationAngles = (0...18).map { _ in 0.0 }
+
+    let columns = (1...6).map { _ in GridItem(.fixed(100)) }
+
     
     func flipCard(at index: Int) {
         if index < memoryGame.cards.count {
-            memoryGame.cards[index].turn()
+            withAnimation(Animation.linear(duration: 0.5)) {
+                rotationAngles[index] += 180
+                memoryGame.cards[index].turn()
+            }
         }
+    }
+    
+    func makeAMove(at index: Int) {
+        print(memoryGame.cardsAreOpen)
+        // Check if the interface isn't frozen after the wrong turn
+        guard !isInteractionDisabled else {
+            return
+        }
+        
+        // Check if it's not a second tap for the same card
+        guard index != prevCard else {
+            return
+        }
+        
+        flipCard(at: index)
+        
+        // Check if the flipped card is the first out of two
+        if prevCard == nil {
+            prevCard = index
+            return
+        }
+        // Otherwise it's the second
+        
+        // Check if two open cards match
+        if memoryGame.cards[index].name == memoryGame.cards[prevCard!].name {
+            prevCard = nil
+            // Check if the game is finished now
+            if memoryGame.cardsAreOpen.allSatisfy({$0}) {
+                self.showCongrats = true
+            }
+        } else {
+            isInteractionDisabled = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                flipCard(at: index)
+                flipCard(at: prevCard!)
+                prevCard = nil
+                isInteractionDisabled = false
+            }
+        }
+        print(memoryGame.cardsAreOpen)
+
     }
     
     private var imageSize = {
@@ -48,39 +96,9 @@ struct MemoryGameView: View {
                 LazyVGrid(columns: columns) {
                     ForEach(0..<18) { i in
                         MemoryCardView(isOpen: $memoryGame.cardsAreOpen[i], image: memoryGame.cards[i].image, name: memoryGame.cards[i].name)
+                            .rotation3DEffect(.degrees(rotationAngles[i]), axis: (x: 0, y: 1, z: 0))
                             .onTapGesture {
-                                // Pause after choosing wrong cards
-                                if isInteractionDisabled {
-                                    return
-                                }
-                                // Preventing tapping the same card two times
-                                if i == prevCard {
-                                    return
-                                }
-                                
-                                flipCard(at: i)
-                                
-                                if prevCard == nil {
-                                    // Flipping the first card
-                                    prevCard = i
-                                } else if prevCard != nil {
-                                    // Flipping the second card
-                                    if memoryGame.cards[i].name == memoryGame.cards[prevCard!].name {
-                                        prevCard = nil
-                                        if memoryGame.cardsAreOpen.allSatisfy({$0}) {
-                                            self.showCongrats = true
-                                        }
-                                    } else {
-                                        isInteractionDisabled = true
-                                        // Timeout for choosing wrong cards
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                            flipCard(at: i)
-                                            flipCard(at: prevCard!)
-                                            prevCard = nil
-                                            isInteractionDisabled = false
-                                        }
-                                    }
-                                }
+                                makeAMove(at: i)
                             }
                     }
                 }

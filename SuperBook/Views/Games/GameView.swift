@@ -21,7 +21,6 @@ struct GameView: View {
             }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                // Update orientation when it changes
             orientation = UIDevice.current.orientation
         }
     }

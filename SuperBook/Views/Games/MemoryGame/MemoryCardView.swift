@@ -11,8 +11,6 @@ struct MemoryCardView: View {
     @Binding var isOpen: Bool
     let image: Image
     let name: String
-    @State private var rotationAngle = 0.0
-    @State private var contentRotationAngle = 0.0
     
 
     private var imageSize = {
@@ -45,26 +43,9 @@ struct MemoryCardView: View {
                     .frame(height: imageSize)
             }
         }
-        .rotation3DEffect(.degrees(contentRotationAngle), axis: (x: 0, y: 1, z: 0))
-        .rotation3DEffect(.degrees(rotationAngle), axis: (x: 0, y: 1, z: 0))
     }
     
     public func turn() {
-        let animationTime = 0.5
-        withAnimation(Animation.linear(duration: animationTime) ) {
-            rotationAngle += 180.0
-            //isOpen.toggle()
-        }
-        withAnimation(Animation.linear(duration: 0.001).delay(animationTime / 2)) {
-            contentRotationAngle += 180.0
-            isOpen.toggle()
-        }
+        isOpen.toggle()
     }
 }
-
-
-/*
-#Preview {
-    MemoryCardView()
-}
-*/
