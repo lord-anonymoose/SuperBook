@@ -21,6 +21,7 @@ Welcome to **SuperBook**, a SwiftUI-powered memory game designed to exercise you
 - **Language**: Swift
 - **Framework**: SwiftUI
 - **Animation**: Custom flip animations for the card-matching feature
+- **API**: Fetching superheroes and supervillains from an online source
 - **Data Management**: Struct-based design to handle game logic and card states
 
 ---

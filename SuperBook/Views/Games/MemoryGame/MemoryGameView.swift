@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Inferno
+//import Inferno
 
 struct MemoryGameView: View {
 
@@ -39,7 +39,6 @@ struct MemoryGameView: View {
     }
     
     func makeAMove(at index: Int) {
-        print(memoryGame.cardsAreOpen)
         // Check if the interface isn't frozen after the wrong turn
         guard !isInteractionDisabled else {
             return
@@ -75,8 +74,6 @@ struct MemoryGameView: View {
                 isInteractionDisabled = false
             }
         }
-        print(memoryGame.cardsAreOpen)
-
     }
     
     private var imageSize = {
@@ -103,9 +100,6 @@ struct MemoryGameView: View {
                     }
                 }
             }
-        }
-        .onAppear{
-            print("View appeared")
         }
         .alert("Congratulations! You did it!", isPresented: self.$showCongrats) {
             Button("Restart") {

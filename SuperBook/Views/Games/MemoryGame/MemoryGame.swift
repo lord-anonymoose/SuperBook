@@ -55,7 +55,6 @@ class MemoryGame: Game, ObservableObject {
                 superheroes = Array(superheroes.prefix(9))
             }
             
-            print("Characters fetched")
             let group = DispatchGroup()
             
             for superhero in superheroes {
@@ -64,7 +63,6 @@ class MemoryGame: Game, ObservableObject {
                     continue
                 }
                 
-                print(url)
                 group.enter()
                 
                 URLSession.shared.dataTask(with: url) { data, response, error in
@@ -91,11 +89,8 @@ class MemoryGame: Game, ObservableObject {
             }
             
             group.notify(queue: .main) {
-                print("Finished loading all images")
                 
                 var currentIndex = 0
-                print(self.cardInfos.count)
-                print(self.cardsAreOpen.count)
                 self.cardInfos = self.cardInfos.shuffled()
                 
                 for i in 0 ... self.cardInfos.count - 1 {
@@ -113,12 +108,10 @@ class MemoryGame: Game, ObservableObject {
                     // Update cards on the main thread
                     DispatchQueue.main.async {
                         self.cards.append(cardView)
-                        print(name)
                     }
                     
                     currentIndex += 1
                 }
-                print("Total cards: \(self.cards.count)")
             }
         }
     }
